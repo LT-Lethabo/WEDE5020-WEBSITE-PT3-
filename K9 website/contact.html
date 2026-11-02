@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Lethabo's K9 Academia of Protection. Message our handlers directly or view our live headquarters location maps in Bloemfontein.">
+    <title>Lethabo’s K9 Academia of Protection | CONTACT</title>
+    <link rel="stylesheet" href="css_/style.css">
+    <link rel="stylesheet" href="https://unpkg.com" />
+</head>
+<body>
+    <header>
+        <img src="Images_/logo.jpeg" width="250" height="250" alt="Lethabo Logo">
+        <h1>Lethabo's K9 Academia of Protection</h1>
+        <h6>The Ultimate Weapon on Four Legs</h6>
+    </header>
+    <nav>
+        <ol>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li><a href="training_hub.html">TRAINING HUB</a></li>
+            <li><a href="k9_resources.html">K9 RESOURCES</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ol>
+    </nav>
+    <main>
+        <h2 style="text-align:center;">General Communications Center</h2>
+        <p style="text-align:center;">Transmit generalized secure files and configuration messages directly to our network handlers below.</p>
+
+        <form id="contactForm" action="https://httpbin.org" method="POST" novalidate>
+            <div class="form-group">
+                <label for="contactName">Sender Name</label>
+                <input type="text" id="contactName" name="contactName" required minlength="2">
+                <div class="error-message" id="cNameError">Please fill in your details(minimum 2 characters).</div>
+            </div>
+
+            <div class="form-group">
+                <label for="contactEmail">Enter a valid email</label>
+                <input type="email" id="contactEmail" name="contactEmail" required>
+                <div class="error-message" id="cEmailError">A valid email is required.</div>
+            </div>
+
+            <div class="form-group">
+                <label for="messageType">Query</label>
+                <select id="messageType" name="messageType" required>
+                    <option value="">-- Select Type --</option>
+                    <option value="general">Tranning Booking</option>
+                    <option value="feedback">Purchasing Goods</option>
+                    <option value="emergency">Other</option>
+                </select>
+                <div class="error-message" id="cTypeError">Please categorize your incoming message array.</div>
+            </div>
+
+            <div class="form-group">
+                <label for="secureMessage">Let us know what you are quering about</label>
+                <textarea id="secureMessage" name="secureMessage" rows="6" required minlength="15"></textarea>
+                <div class="error-message" id="cMsgError">Message payload minimum threshold not satisfied (at least 15 characters).</div>
+            </div>
+
+            <button type="submit">Send Message</button>
+            <div id="contactFeedback" class="form-response"></div>
+        </form>
+        
+        <div style="text-align: center; margin: 30px 0;">
+            <p>
+                <img src="Images_/whatsapp_.png" width="24" height="24" style="vertical-align: middle;" alt="WhatsApp Network logo">
+                <span>+27 67 000 0000</span>
+            </p>
+            <p>
+                <img src="Images_/instagram.jpg" width="24" height="24" style="vertical-align: middle;" alt="Instagram Social logo">
+                <span>@Lethabo’s k9</span>
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <h4>Our Head Office location coordinates (Bloemfontein, Free State)</h4>
+        <div id="interactive-map"></div>
+    </footer>
+
+    <script src="https://unpkg.com"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
